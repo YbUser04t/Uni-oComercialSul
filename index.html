@@ -1,0 +1,22 @@
+<main class="container" id="product-list"></main>
+
+<script src="js/products.js"></script>
+<script src="js/cart.js"></script>
+
+<script>
+  const list = document.getElementById("product-list");
+
+  products.forEach(p => {
+    list.innerHTML += `
+      <div class="product">
+        <img src="${p.image}">
+        <h2>${p.name}</h2>
+        <p class="price">R$ ${p.price.toFixed(2)}</p>
+        <small>${p.category}</small>
+        <button onclick='addToCart(${JSON.stringify(p)})'>
+          Adicionar
+        </button>
+      </div>
+    `;
+  });
+</script>
