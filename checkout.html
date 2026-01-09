@@ -1,0 +1,18 @@
+<script>
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let total = 0;
+  let precisaFrete = false;
+
+  cart.forEach(item => {
+    total += item.price;
+    if (item.type === "fisico") precisaFrete = true;
+  });
+
+  document.body.innerHTML += `<h2>Total: R$ ${total.toFixed(2)}</h2>`;
+
+  if (precisaFrete) {
+    document.body.innerHTML += "<p>Frete será calculado</p>";
+  } else {
+    document.body.innerHTML += "<p>Produto digital — envio imediato</p>";
+  }
+</script>
