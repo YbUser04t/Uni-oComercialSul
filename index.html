@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>União Comercial Sul</title>
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS interno (pra NÃO quebrar) -->
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f4f6f8;
+      color: #111;
+    }
+
+    header {
+      background: #0b3c5d;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .product {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .product img {
+      width: 100%;
+      height: 160px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .product h2 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0b3c5d;
+      margin-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #198754;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #157347;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  União Comercial Sul
+</header>
+
+<main class="container">
+
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200?text=Utens%C3%ADlio">
+    <h2>Organizador de Cozinha</h2>
+    <div class="price">R$ 59,90</div>
+    <button onclick="alert('Produto adicionado')">Adicionar ao carrinho</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200?text=Eletr%C3%B4nico">
+    <h2>Fone Bluetooth</h2>
+    <div class="price">R$ 129,90</div>
+    <button onclick="alert('Produto adicionado')">Adicionar ao carrinho</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/300x200?text=E-book">
+    <h2>E-book Casa Prática</h2>
+    <div class="price">R$ 19,90</div>
+    <button onclick="alert('Produto adicionado')">Comprar</button>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 União Comercial Sul
+</footer>
+
+</body>
+</html>
